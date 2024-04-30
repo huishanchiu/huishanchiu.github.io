@@ -1,0 +1,68 @@
+article:
+  type: tech # tech/story
+  license: ""
+  share: # [wechat, weibo, email, link]
+logo:
+  subtitle: "Eat, Sleep, Read, Code|repeat"
+  # avatar: "[{config.avatar}]"
+  # avatar: ./source/assets/pixel.png
+  #avatar: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f8dcc77-337e-4fea-a1b9-e5670c21940d/dd4odx6-4dfbeb71-6697-4fbc-8da1-56ede5c627f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmOGRjYzc3LTMzN2UtNGZlYS1hMWI5LWU1NjcwYzIxOTQwZFwvZGQ0b2R4Ni00ZGZiZWI3MS02Njk3LTRmYmMtOGRhMS01NmVkZTVjNjI3ZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fj06GS35Tbm0pV2wBmFkp9GXQFpcEzbk2Y1J11QhWuI
+  # avatar: https://img.cubik65536.top/CubikLogoAlpha.png
+  avatar: https://i.imgur.com/qvZJDqT.png
+style:
+  leftbar:
+    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+    blur-px: 100px # 模糊半径
+    blur-bg: var(--alpha60) # 模糊颜色
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    - id: about # 页面中高亮的 menu_id
+      # theme: "#1BCDFC" # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+      # icon: solar:planet-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+      # icon: solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+      title: 關於 # 标题
+      url: /about # 跳转链接，支持相对路径和绝对路径
+
+  # - id: wiki
+  #   theme: "#3DC550"
+  #   icon: solar:notebook-bookmark-bold-duotone
+  #   title: 文档
+  #   url: /wiki/
+  # - id: explore
+  #   theme: "#FA6400"
+  #   icon: solar:planet-bold-duotone
+  #   title: 探索
+  #   url: /explore/
+  # - id: social
+  #   theme: "#F44336"
+  #   icon: solar:chat-square-like-bold-duotone
+  #   title: 社交
+  #   url: /friends/
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块（需要content: true)
+# footer:
+#   social:
+#     github:
+#       icon: '<img src="./source/assets/pixel.png"/>'
+#       url: https://
+#     music:
+#       icon: '<img src="/assets/placeholder/social/3845874.svg"/>'
+#       url: https://
+#     unsplash:
+#       icon: '<img src="/assets/placeholder/social/3616429.svg"/>'
+#       url: https://
+#     comments:
+#       icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
+#       url: https://
+comments:
+  service: beaudar
+  beaudar:
+    repo: xaoxuu/blog-comments
+favicon:
+  small: https://i.imgur.com/qvZJDqT.png

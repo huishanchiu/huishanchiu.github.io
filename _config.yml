@@ -2,13 +2,14 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-title: Hexo
+# Sites
+title: 33.playground
+avatar: ./source/assets/pixel.png
 subtitle: ""
 description: ""
 keywords:
-author: John Doe
-language: en
+author: 33
+language: zh-TW
 timezone: ""
 
 # URL
@@ -96,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
