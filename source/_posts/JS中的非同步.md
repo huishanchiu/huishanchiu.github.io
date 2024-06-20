@@ -181,4 +181,4 @@ async function main() {
 }
 ```
 
-在最後呼叫 funcA & funcB 前都加上 await ，就可以確保 funcA 完成 →funcB 完成 →console()
+在最後呼叫 funcA & funcB 前都加上 await ，就可以確保 funcA 完成 →funcB 完成 → 印出 console
