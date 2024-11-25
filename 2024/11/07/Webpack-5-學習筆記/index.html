@@ -17,12 +17,12 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>33.playground</title>
+  <title>Webpack 學習筆記 - 33.playground</title>
 
   
     <meta name="description" content="Webpack本篇為參考 freeCodeCamp 的教學影片的實做筆記，如有錯誤歡迎指正！ webpack 是什麼？  一種前端資源構建工具  當在 html 引入 scss 等 css 預處理器，瀏覽器不認識，需要另外把 scss 轉成 css  當寫的 js 引用 ES6 或更高的語法，瀏覽器有可能不認識，需要另外把語法編譯成瀏覽器懂的  因此發展出「構建工具」來幫我們管理這些細瑣的編譯小工">
 <meta property="og:type" content="article">
-<meta property="og:title" content="33.playground">
+<meta property="og:title" content="Webpack 學習筆記">
 <meta property="og:url" content="https://huishanchiu.github.io/2024/11/07/Webpack-5-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/index.html">
 <meta property="og:site_name" content="33.playground">
 <meta property="og:description" content="Webpack本篇為參考 freeCodeCamp 的教學影片的實做筆記，如有錯誤歡迎指正！ webpack 是什麼？  一種前端資源構建工具  當在 html 引入 scss 等 css 預處理器，瀏覽器不認識，需要另外把 scss 轉成 css  當寫的 js 引用 ES6 或更高的語法，瀏覽器有可能不認識，需要另外把語法編譯成瀏覽器懂的  因此發展出「構建工具」來幫我們管理這些細瑣的編譯小工">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLH-Lrm8soncyS9rwOVM2cwLj360rRUNYohA&s">
 <meta property="og:image" content="https://huishanchiu.github.io/Webpack-assets/image%201.png">
 <meta property="article:published_time" content="2024-11-07T03:15:44.144Z">
-<meta property="article:modified_time" content="2024-11-25T09:23:24.838Z">
+<meta property="article:modified_time" content="2024-11-25T09:25:48.059Z">
 <meta property="article:author" content="33">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLH-Lrm8soncyS9rwOVM2cwLj360rRUNYohA&s">
@@ -66,7 +66,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/06/20/JS%E4%B8%AD%E7%9A%84%E9%9D%9E%E5%90%8C%E6%AD%A5/"><span class="title">JS中的非同步</span></a><a class="item title" href="/2024/05/02/%E6%9C%89%E8%B6%A3%E7%9A%84%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90/"><span class="title">有趣的邏輯運算子</span></a><a class="item title" href="/2024/05/02/%E6%B7%B1%E6%8B%B7%E8%B2%9D%E8%88%87%E6%B7%BA%E6%8B%B7%E8%B2%9D/"><span class="title">深拷貝與淺拷貝</span></a><a class="item title" href="/2024/05/02/%E8%BD%89%E8%81%B7%E8%B5%B7%E9%BB%9E-AppWorks-School%E7%94%B3%E8%AB%8B%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/"><span class="title">轉職起點-AppWorks School申請心得分享</span></a><a class="item title" href="/2024/02/24/%E3%80%8A12%E9%80%B1%E5%81%9A%E5%AE%8C%E4%B8%80%E5%B9%B4%E5%B7%A5%E4%BD%9C%E3%80%8B%E8%AE%80%E5%BE%8C%E5%BF%83%E5%BE%97%EF%BC%9A%E6%8B%8B%E6%A3%84%E5%B9%B4%E5%BA%A6%E8%A8%88%E7%95%AB%E5%90%A7%EF%BC%81/"><span class="title">《12週做完一年工作》讀後心得：拋棄年度計畫吧！</span></a><a class="item title" href="/2021/09/25/%E9%82%84%E6%B2%92%E7%9A%84%E5%8A%9B%E9%87%8F/"><span class="title">The Power of Yet , 「還沒」的力量</span></a><a class="item title" href="/2024/04/23/%E9%9B%B2%E8%A3%A1%E7%9A%84%E6%97%A5%E5%AD%90/"><span class="title">雲裡的日子</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/11/07/Webpack-5-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"><span class="title">Webpack 學習筆記</span></a><a class="item title" href="/2024/06/20/JS%E4%B8%AD%E7%9A%84%E9%9D%9E%E5%90%8C%E6%AD%A5/"><span class="title">JS中的非同步</span></a><a class="item title" href="/2024/05/02/%E6%9C%89%E8%B6%A3%E7%9A%84%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90/"><span class="title">有趣的邏輯運算子</span></a><a class="item title" href="/2024/05/02/%E6%B7%B1%E6%8B%B7%E8%B2%9D%E8%88%87%E6%B7%BA%E6%8B%B7%E8%B2%9D/"><span class="title">深拷貝與淺拷貝</span></a><a class="item title" href="/2024/05/02/%E8%BD%89%E8%81%B7%E8%B5%B7%E9%BB%9E-AppWorks-School%E7%94%B3%E8%AB%8B%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/"><span class="title">轉職起點-AppWorks School申請心得分享</span></a><a class="item title" href="/2024/02/24/%E3%80%8A12%E9%80%B1%E5%81%9A%E5%AE%8C%E4%B8%80%E5%B9%B4%E5%B7%A5%E4%BD%9C%E3%80%8B%E8%AE%80%E5%BE%8C%E5%BF%83%E5%BE%97%EF%BC%9A%E6%8B%8B%E6%A3%84%E5%B9%B4%E5%BA%A6%E8%A8%88%E7%95%AB%E5%90%A7%EF%BC%81/"><span class="title">《12週做完一年工作》讀後心得：拋棄年度計畫吧！</span></a><a class="item title" href="/2021/09/25/%E9%82%84%E6%B2%92%E7%9A%84%E5%8A%9B%E9%87%8F/"><span class="title">The Power of Yet , 「還沒」的力量</span></a><a class="item title" href="/2024/04/23/%E9%9B%B2%E8%A3%A1%E7%9A%84%E6%97%A5%E5%AD%90/"><span class="title">雲裡的日子</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -78,8 +78,16 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">首頁</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">網誌</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">發布於：<time datetime="2024-11-07T03:15:44.144Z">2024-11-07</time></span><span class="sep updated"></span><span class="text updated">更新於：<time datetime="2024-11-25T09:23:24.838Z">2024-11-25</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">網誌</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Tool/">Tool</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">發布於：<time datetime="2024-11-07T03:15:44.144Z">2024-11-07</time></span><span class="sep updated"></span><span class="text updated">更新於：<time datetime="2024-11-25T09:25:48.059Z">2024-11-25</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Webpack 學習筆記</span></h1>
+        
+      </div>
+    </div>
     
   </div>
   </div><article class="md-text content"><h1 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h1><p>本篇為參考 freeCodeCamp 的<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=MpGLUVbqoYQ">教學影片</a>的實做筆記，如有錯誤歡迎指正！</p>
