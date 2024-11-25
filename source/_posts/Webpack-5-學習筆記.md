@@ -1,3 +1,10 @@
+---
+title: Webpack 學習筆記
+date: { date() }
+tags:
+categories: ["Tool"]
+---
+
 # Webpack
 
 本篇為參考 freeCodeCamp 的[教學影片](https://www.youtube.com/watch?v=MpGLUVbqoYQ)的實做筆記，如有錯誤歡迎指正！
