@@ -54,7 +54,7 @@ categories: ["Tool"]
 
 - npm init → 初始化一個新的 Node.js 專案。它會幫助你建立一個基本的 `package.json` 文件，該文件包含專案的元數據，例如專案名稱、版本、描述、入口點、腳本、依賴項等
 
-  #### package.json
+  package.json
 
   ```ts
   {
@@ -178,8 +178,6 @@ webpack.config 中指定
 ```
 
 ### commit 9:Add prod and dev configs, add dev-server
-
-#### **Split webpack.config to dev and prod env**
 
 將 webpack config 分成 common、正式、測試環境
 
