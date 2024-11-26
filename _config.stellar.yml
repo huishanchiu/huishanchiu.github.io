@@ -61,9 +61,9 @@ search:
 #       icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
 #       url: https://
 comments:
-  service: twikoo
-  twikoo:
-    envId: https://xxx # vercel函数
+  service: beaudar
+  beaudar:
+    repo: huishanchiu/huishanchiu.github.io
 
 favicon:
-  small: https://i.imgur.com/qvZJDqT.png
+  small: <img src="./source/assets/pixel.png"/>
