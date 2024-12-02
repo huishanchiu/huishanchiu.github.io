@@ -1,7 +1,7 @@
 ---
 title: weekly review_11/18→11/24
 date: { date() }
-tags:
+tags: ["weekly review"]
 categories: ["Life"]
 ---
 
